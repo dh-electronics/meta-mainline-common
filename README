@@ -1,0 +1,9 @@
+This layer provides newer upstream versions of various base components.
+
+Dependencies
+============
+
+This layer depends on:
+
+  URI: https://github.com/openembedded/openembedded-core.git
+  branch: zeus
