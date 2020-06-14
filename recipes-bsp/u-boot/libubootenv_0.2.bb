@@ -1,5 +1,4 @@
 SUMMARY = "U-Boot libraries and tools to access environment"
-DEPENDS += "mtd-utils zlib"
 
 DESCRIPTION = "This package contains tools and libraries to read \
 and modify U-Boot environment. \
@@ -13,7 +12,7 @@ SECTION = "libs"
 
 PV = "0.2+git${SRCPV}"
 SRC_URI = "git://github.com/sbabic/libubootenv;protocol=https"
-SRCREV = "ba952d05ec9ab16029816a06d956bac7fb4e9832"
+SRCREV = "f4b9cde3815abe84a98079cedd515283ea08c16b"
 
 S = "${WORKDIR}/git"
 
@@ -21,6 +20,7 @@ inherit cmake lib_package
 
 EXTRA_OECMAKE = "-DCMAKE_BUILD_TYPE=Release"
 
+DEPENDS = "zlib"
 PROVIDES += "u-boot-fw-utils"
 RPROVIDES_${PN}-bin += "u-boot-fw-utils"
 
