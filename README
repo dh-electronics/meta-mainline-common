@@ -6,4 +6,4 @@ Dependencies
 This layer depends on:
 
   URI: https://github.com/openembedded/openembedded-core.git
-  branch: zeus
+  branch: dunfell
