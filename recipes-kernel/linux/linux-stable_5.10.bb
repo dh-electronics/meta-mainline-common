@@ -1,18 +1,16 @@
-FILESEXTRAPATHS_prepend := "${THISDIR}/${PN}:"
-
 require recipes-kernel/linux/linux-yocto.inc
 
 # board specific branches
 KBRANCH ?= "linux-5.10.y"
 
-SRCREV_machine ?= "841fca5a32cccd7d0123c0271f4350161ada5507"
-SRCREV_meta ?= "1c2727e4bf30f06e6135ef59999b53cf465f6371"
+SRCREV_machine ?= "02164534cb86a559915089e09a560b672b8b1ddb"
+SRCREV_meta ?= "6b12385f7d89ccac211c3981420a84394530ce83"
 
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;name=machine;branch=${KBRANCH}; \
            git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-5.10;destsuffix=${KMETA}"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
-LINUX_VERSION ?= "5.10.1"
+LINUX_VERSION ?= "5.10.3"
 
 DEPENDS += "${@bb.utils.contains('ARCH', 'x86', 'elfutils-native', '', d)}"
 DEPENDS += "openssl-native util-linux-native"
