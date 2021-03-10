@@ -3,7 +3,7 @@ require mesa.inc
 DEFAULT_PREFERRENCE = "-1"
 
 SRC_URI = " \
-	git://gitlab.freedesktop.org/mesa/mesa;branch=20.3;protocol=http \
+	git://gitlab.freedesktop.org/mesa/mesa.git;branch=20.3;protocol=https \
 "
 
 S = "${WORKDIR}/git"
