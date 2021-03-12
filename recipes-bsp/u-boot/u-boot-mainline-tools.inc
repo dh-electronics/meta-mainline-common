@@ -4,6 +4,10 @@ DEPENDS += "openssl"
 PROVIDES = "${MLPREFIX}u-boot-mkimage ${MLPREFIX}u-boot-mkenvimage"
 PROVIDES_class-native = "u-boot-mkimage-native u-boot-mkenvimage-native"
 
+PROVIDES_append_class-target = " ${MLPREFIX}u-boot-tools"
+PROVIDES_append_class-native = " u-boot-tools-native"
+PROVIDES_append_class-nativesdk = " nativesdk-u-boot-tools"
+
 PACKAGES += "${PN}-mkimage ${PN}-mkenvimage"
 
 # Required for backward compatibility with "u-boot-mkimage-xxx.bb"
