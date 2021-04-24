@@ -1,4 +1,4 @@
-require mesa.inc
+require mesa-mainline.inc
 
 DEFAULT_PREFERRENCE = "-1"
 
