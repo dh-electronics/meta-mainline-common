@@ -3,14 +3,14 @@ require recipes-kernel/linux/linux-yocto.inc
 # board specific branches
 KBRANCH ?= "linux-5.10.y"
 
-SRCREV_machine ?= "2cd5fe24a7f025448f19d98c4f4c45ff79ce0784"
-SRCREV_meta ?= "44498529cd41b235e527c48e48272d9af64fdf7d"
+SRCREV_machine ?= "71046eac2db9aeccf10763d034a1a123911c9a81"
+SRCREV_meta ?= "26a2a3cf764dde593325b8c08024f5990a5f6f02"
 
 SRC_URI = "git://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git;name=machine;branch=${KBRANCH}; \
            git://git.yoctoproject.org/yocto-kernel-cache;type=kmeta;name=meta;branch=yocto-5.10;destsuffix=${KMETA}"
 
 LIC_FILES_CHKSUM = "file://COPYING;md5=6bc538ed5bd9a7fc9398086aedcd7e46"
-LINUX_VERSION ?= "5.10.52"
+LINUX_VERSION ?= "5.10.53"
 
 DEPENDS += "${@bb.utils.contains('ARCH', 'x86', 'elfutils-native', '', d)}"
 DEPENDS += "openssl-native util-linux-native"
