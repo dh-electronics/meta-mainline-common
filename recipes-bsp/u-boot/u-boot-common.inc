@@ -9,7 +9,7 @@ DEPENDS += "flex-native bison-native"
 LICENSE = "GPLv2+"
 PE = "1"
 
-SRC_URI = "git://source.denx.de/u-boot.git \
+SRC_URI = "git://source.denx.de/u-boot.git;branch=master \
           "
 
 S = "${WORKDIR}/git"
