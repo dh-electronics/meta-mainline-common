@@ -1,4 +1,5 @@
-This layer provides newer upstream versions of various base components.
+This layer provides newer upstream versions of the following base components:
+U-Boot, Linux kernel and Mesa.
 
 Dependencies
 ============
