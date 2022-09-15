@@ -1,3 +1,6 @@
+!!! This repository is no longer maintained !!!
+Please use https://source.denx.de/denx/meta-mainline-common instead
+
 This layer provides newer upstream versions of the following base components:
 U-Boot, Linux kernel and Mesa.
 
